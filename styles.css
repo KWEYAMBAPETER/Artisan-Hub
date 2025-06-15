@@ -1,0 +1,63 @@
+/* hero-section */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  .animate-float {
+    animation: float 4s ease-in-out infinite;
+  }
+
+  /* About Us Section */
+        .card {
+            transition: all 0.3s ease;
+            height: 120px;
+            overflow: hidden;
+        }
+        .card:hover {
+            height: auto;
+            transform: translateY(-5px);
+        }
+        .card-content {
+            opacity: 0;
+            transition: opacity 0.3s ease 0.1s;
+        }
+        .card:hover .card-content {
+            opacity: 1;
+        }
+        .card:nth-child(1):hover { background-color: #f0f9ff; }
+        .card:nth-child(2):hover { background-color: #f5f3ff; }
+        .card:nth-child(3):hover { background-color: #fef2f2; }
+        .card:nth-child(4):hover { background-color: #ecfdf5; }
+        .card:nth-child(5):hover { background-color: #f7dce8; }
+        .card:nth-child(6):hover { background-color: #fefce8; }
+
+
+        /* Features Section /why choose us*/
+        .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+  .delay-100 {
+    animation-delay: 0.2s;
+    opacity: 0;
+  }
+  .delay-200 {
+    animation-delay: 0.4s;
+    opacity: 0;
+  }
+  .delay-300 {
+    animation-delay: 0.6s;
+    opacity: 0;
+  }
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
+
+
+  
